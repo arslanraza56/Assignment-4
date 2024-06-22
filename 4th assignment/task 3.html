@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Array of marks
+const marks = [25, 30, 40, 50];
+
+// Map function to perform DMAS operations on each mark with 10
+const result = marks.map(mark => {
+    // 
+    const division = mark / 10;
+    const multiplication = mark * 10;
+    const addition = mark + 10;
+    const subtraction = mark - 10;
+
+    // Return the results in an object
+    return {
+        mark: mark,
+        division: division,
+        multiplication: multiplication,
+        addition: addition,
+        subtraction: subtraction
+    };
+});
+
+
+console.log(result);
+</script>
+</html>

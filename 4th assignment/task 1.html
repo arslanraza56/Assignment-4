@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Student = {
+            name: "",
+            age: 0,
+            grade: {
+                Math: 0,
+                Science: 0,
+                Literature: 0,
+                History: 0
+            },
+            subjects: ["Math", "Science", "Literature", "History"]
+        };
+    
+        // Array of students with their marks
+        const studentsArray = [
+            {
+                name: "Ali",
+                age: 15,
+                grade: {
+                    Math: 90,
+                    Science: 85,
+                    Literature: 92,
+                    History: 88
+                }
+            },
+            {
+                name: "fatimah",
+                age: 16,
+                grade: {
+                    Math: 85,
+                    Science: 90,
+                    Literature: 88,
+                    History: 84
+                }
+            },
+            {
+                name: "khadijah",
+                age: 17,
+                grade: {
+                    Math: 88,
+                    Science: 92,
+                    Literature: 86,
+                    History: 90
+                }
+            }
+        ];
+    
+        // Iterate over the students array
+        for (const student of studentsArray) {
+            console.log(`Name: ${student.name}`);
+            console.log(`Age: ${student.age}`);
+            console.log("Grades:");
+            
+            // Iterate over the subjects of the student
+            for (const subject in student.grade) {
+                console.log(`${subject}: ${student.grade[subject]}`);
+            }
+
+           
+          
+            
+        }
+    </script>
+</body>
+</html>
